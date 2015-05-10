@@ -55,6 +55,14 @@
 	<url-pattern>/upload</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>image</servlet-name>
+  	<servlet-class>org.imyy.ImageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>image</servlet-name>
+	<url-pattern>/image</url-pattern>
+  </servlet-mapping>
   
   
   
