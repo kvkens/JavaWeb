@@ -63,7 +63,14 @@
 	<servlet-name>image</servlet-name>
 	<url-pattern>/image</url-pattern>
   </servlet-mapping>
-  
+  <servlet>
+  	<servlet-name>cookies</servlet-name>
+  	<servlet-class>org.imyy.CookiesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>cookies</servlet-name>
+  	<url-pattern>/Cookies</url-pattern>
+  </servlet-mapping>
   
   
 </web-app>
