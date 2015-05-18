@@ -8,7 +8,7 @@
 <title>上传表单</title>
 </head>
 <body>
- <form name="uploadForm" method="POST" enctype="MULTIPART/FORM-DATA" action="../upload">
+ <form name="uploadForm" method="post" enctype="MULTIPART/FORM-DATA" action="../upload">
     <table>
       <tr>
        <td><div align="right">User Name:</div></td>

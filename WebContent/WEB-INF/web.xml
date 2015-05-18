@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>JaveWeb</display-name>
+  <display-name>JavaWeb</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -10,82 +10,79 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-  	<servlet-name>dispatcher</servlet-name>
-  	<servlet-class>DispatcherServlet</servlet-class>
+    <servlet-name>dispatcher</servlet-name>
+    <servlet-class>DispatcherServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>dispatcher</servlet-name>
-  	<url-pattern>/demo3.2/dispatcher</url-pattern>
+    <servlet-name>dispatcher</servlet-name>
+    <url-pattern>/demo3.2/dispatcher</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>hello</servlet-name>
-  	<servlet-class>org.imyy.HelloServlet</servlet-class>
-  	<init-param>
-  		<param-name>color</param-name>
-  		<param-value>blue</param-value>
-  	</init-param>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>org.imyy.HelloServlet</servlet-class>
+    <init-param>
+      <param-name>color</param-name>
+      <param-value>blue</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
-	<servlet-name>hello</servlet-name>
-	<url-pattern>/Hello</url-pattern>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/Hello</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>download</servlet-name>
-  	<servlet-class>org.imyy.DownServlet</servlet-class>
+    <servlet-name>download</servlet-name>
+    <servlet-class>org.imyy.DownServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>download</servlet-name>
-  	<url-pattern>/download</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-  	<servlet-name>upload</servlet-name>
-  	<servlet-class>org.imyy.UploadServlet</servlet-class>
-  	<init-param>
-  		<param-name>filePath</param-name>
-  		<param-value>store</param-value>
-  	</init-param>
-  	<init-param>
-  		<param-name>tempFilePath</param-name>
-  		<param-value>temp</param-value>
-  	</init-param>
-  </servlet>
-  <servlet-mapping>
-	<servlet-name>upload</servlet-name>
-	<url-pattern>/upload</url-pattern>
-  </servlet-mapping>
-  
-  <servlet>
-  	<servlet-name>image</servlet-name>
-  	<servlet-class>org.imyy.ImageServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-	<servlet-name>image</servlet-name>
-	<url-pattern>/image</url-pattern>
+    <servlet-name>download</servlet-name>
+    <url-pattern>/download</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>cookies</servlet-name>
-  	<servlet-class>org.imyy.CookiesServlet</servlet-class>
+    <servlet-name>upload</servlet-name>
+    <servlet-class>org.imyy.UploadServlet</servlet-class>
+    <init-param>
+      <param-name>filePath</param-name>
+      <param-value>store</param-value>
+    </init-param>
+    <init-param>
+      <param-name>tempFilePath</param-name>
+      <param-value>temp</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>cookies</servlet-name>
-  	<url-pattern>/Cookies</url-pattern>
+    <servlet-name>upload</servlet-name>
+    <url-pattern>/upload</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>check</servlet-name>
-  	<servlet-class>org.imyy.CheckServlet</servlet-class>
+    <servlet-name>image</servlet-name>
+    <servlet-class>org.imyy.ImageServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>check</servlet-name>
-  	<url-pattern>/check</url-pattern>
+    <servlet-name>image</servlet-name>
+    <url-pattern>/image</url-pattern>
   </servlet-mapping>
-    <servlet>
-  	<servlet-name>output</servlet-name>
-  	<servlet-class>org.imyy.OutputServlet</servlet-class>
+  <servlet>
+    <servlet-name>cookies</servlet-name>
+    <servlet-class>org.imyy.CookiesServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>output</servlet-name>
-  	<url-pattern>/output</url-pattern>
+    <servlet-name>cookies</servlet-name>
+    <url-pattern>/Cookies</url-pattern>
   </servlet-mapping>
-  
+  <servlet>
+    <servlet-name>check</servlet-name>
+    <servlet-class>org.imyy.CheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>check</servlet-name>
+    <url-pattern>/check</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>output</servlet-name>
+    <servlet-class>org.imyy.OutputServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>output</servlet-name>
+    <url-pattern>/output</url-pattern>
+  </servlet-mapping>
 </web-app>
