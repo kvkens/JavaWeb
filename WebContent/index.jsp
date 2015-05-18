@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div>
-		你好
+		你好<%= request.getParameter("username") %>
 	</div>
 </body>
 </html>
