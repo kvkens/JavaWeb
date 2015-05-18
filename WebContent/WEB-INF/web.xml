@@ -85,4 +85,32 @@
     <servlet-name>output</servlet-name>
     <url-pattern>/output</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>main</servlet-name>
+    <servlet-class>org.imyy.MainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>main</servlet-name>
+    <url-pattern>/Main</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>greet</servlet-name>
+    <servlet-class>org.imyy.GreetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>greet</servlet-name>
+    <url-pattern>/greet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>hello1</servlet-name>
+    <servlet-class>org.imyy.HelloServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hello1</servlet-name>
+    <url-pattern>/hello1</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
