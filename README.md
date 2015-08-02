@@ -1,2 +1,2 @@
 # JavaWeb
-Study Java
+> 为了学习而创建的一个小项目！
